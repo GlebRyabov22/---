@@ -1,32 +1,32 @@
- Система импорта
+ Imports System
 
-Модуль  HWцикл
-    Sub  Main (аргументы  как  строка ())
-        Dim  a,  p,  n,  i  As  Long
-        Const  max  как  целое число  =  2147483647
+Module HWcycle
+    Sub Main(args As String())
+        Dim a, p, n, i As Long
+        Const max As Integer = 2147483647
 
-        я  =  1
-        р  =  1
-        Console.WriteLine( "Введите количество вводимых чисел " )
-        n  =  (Консоль.ReadLine())
-        Для  i  =  1  To  n  Шаг  1
-            Console.WriteLine( " введите число " )
-            a  =  (Консоль.ReadLine())
-            р  =  р  *  а
+        i = 1
+        p = 1
+        Console.WriteLine(" Введите количество вводимых чисел ")
+        n = (Console.ReadLine())
+        For i = 1 To n Step 1
+            Console.WriteLine(" введите число ")
+            a = (Console.ReadLine())
+            p = p * a
 
 
-        Следующий
-        Если  (p  >  max  /  i)  Тогда
-            Console.Write( "Память перегружина !!!" )
-            Console.WriteLine(i  -  1 )
+        Next
+        If (p > max / i) Then
+            Console.Write(" Память перегружина !!!")
+            Console.WriteLine(i - 1)
 
-        Конец  , если
-        Console.WriteLine( "Произведение N введенных номеров равно" )
+        End If
+        Console.WriteLine(" Произведение N введенных Вами чисел равно ")
         Console.WriteLine(p)
 
 
 
 
-    Конец  сабвуфера
-Конечный  модуль
+    End Sub
+End Module
 
