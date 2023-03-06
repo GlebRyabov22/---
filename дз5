@@ -1,0 +1,74 @@
+ Система импорта
+
+
+Модульная  программа
+    Sub  Main (аргументы  как  строка ())
+        Dim  N,  версия  As  String
+        Тусклые  быки,  коровы  как  целое число
+        Тусклый  ключ  Как  ConsoleKeyInfo
+        Dim  движется  как  целое число
+        Console.WriteLine( "пробел" )
+
+        Делать
+            ключ  =  Console.ReadKey( Истина )
+            Console.ForegroundColor  =  ConsoleColor.Зеленый
+            Рандомизировать()
+            Делать
+                N  =  Int(( 9000  *  Rnd())  +  1000 )
+                Console.WriteLine(N)
+            Цикл  до тех пор, пока  CheckDublicates(N)  =  False
+
+            Делать
+                версия  =  Console.ReadLine()
+                ходы  +=  1
+                Если  ПроверитьДубликаты(вер)  Тогда
+                    Продолжить  Сделать
+                Конец  , если
+
+
+                коровы  =  0
+                быки  =  0
+                Для  j  как  байт  =  от 0  до  3
+                    Для  i  как  байт  =  от 0  до  3
+                        Если  (N.Chars(i)  =  ver.Chars(j))  Тогда
+                            Если  я  =  j  Тогда
+
+                                быки  +=  1
+                            Еще
+
+                                коровы  +=  1
+                            Конец  , если
+                        Конец  , если
+
+                    Следующий
+                Следующий
+
+                Console.ForegroundColor  =  ConsoleColor.Red
+                Console.WriteLine( "Вы нашли коров = {0}" ,  коровы)
+                Console.WriteLine( "Вы нашли быков = {0}" ,  быки)
+
+            Цикл  до  N  =  ver
+            Console.ForegroundColor  =  ConsoleColor.Зеленый
+            Console.WriteLine( "Победа" )
+            Console.WriteLine( "Играть снова? Если да = y, если нет = n" )
+            Console.WriteLine( "сделаны ходы = {0}" ,  ходы)
+            Делать
+                ключ  =  Console.ReadKey( Истина )
+            Цикл  до  ключа .KeyChar  =  "y"c  или  ключ .KeyChar  =  "n"c
+            Console.WriteLine( ключ .KeyChar)
+            Консоль.Очистить()
+        Цикл  до  ключа .KeyChar  =  "n"c
+
+    Конец  сабвуфера
+    Функция  CheckDublicates(Num  As  String )  As  Boolean
+        ЧекДубликатес  =  Ложь
+        Для  j  =  от 0  до  2
+            Для  i  =  j  +  1  до  3
+                Если  Число.Символов(j)  =  Число.Символов(i),  Тогда
+                    ЧекДубликатес  =  Истина
+                Конец  , если
+            Следующий
+        Следующий
+
+    Конечная  функция
+Конечный  модуль
