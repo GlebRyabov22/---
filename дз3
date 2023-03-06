@@ -1,0 +1,21 @@
+Система импорта
+
+Модульная  программа
+    Sub  Main (аргументы  как  строка ())
+        Dim  ver,  min,  secynd,  min2,  hour,  ostatokmin,  minut  As  Integer
+        'Dim vrem As DateTime
+        'Консоль.WriteLine("ВРЕМИ")
+        'врем = Console.ReadLine()
+        Console.WriteLine( "Введите время в секундах" )
+        версия  =  Console.ReadLine()
+        мин  =  версия  \  60
+        мин2  =  мин  *  60
+        секинд  =  версия  Mod  60
+        час  =  мин  \  60
+        остатокмин  =  час  *  60
+        минута  =  мин  Mod  60
+        Console.WriteLine( "секинд = {0}" ,  секинд)
+        Console.WriteLine( "Минута = {0}" ,  минута)
+        Console.WriteLine( "час = {0}" ,  час)
+    Конец  сабвуфера
+Конечный  модуль
