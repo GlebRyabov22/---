@@ -2,29 +2,25 @@
 
 Модуль  HWцикл
     Sub  Main (аргументы  как  строка ())
-        Dim  a,  p,  n  как  целое число
+        Dim  a,  p,  n,  i  As  Long
         Const  max  как  целое число  =  2147483647
 
-
+        я  =  1
         р  =  1
         Console.WriteLine( "Введите количество вводимых чисел " )
         n  =  (Консоль.ReadLine())
-        Для  i  =  1  To  n
-            Если  (p  <  max  /  a)  Тогда
-                Console.WriteLine( " введите число " )
-                a  =  (Консоль.ReadLine())
-                р  =  р  *  а
+        Для  i  =  1  To  n  Шаг  1
+            Console.WriteLine( " введите число " )
+            a  =  (Консоль.ReadLine())
+            р  =  р  *  а
 
-
-            Еще
-                Console.Write( "Память перегружина !!!" )
-                Console.WriteLine(a  -  1 )
-            Конец  , если
 
         Следующий
+        Если  (p  >  max  /  i)  Тогда
+            Console.Write( "Память перегружина !!!" )
+            Console.WriteLine(i  -  1 )
 
-
-
+        Конец  , если
         Console.WriteLine( "Произведение N введенных номеров равно" )
         Console.WriteLine(p)
 
@@ -33,3 +29,4 @@
 
     Конец  сабвуфера
 Конечный  модуль
+
