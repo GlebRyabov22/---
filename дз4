@@ -1,0 +1,26 @@
+Система импорта
+Импортирует  System.Data
+Импортирует  System.Runtime.InteropServices
+
+
+Модульная  программа
+    Sub  Main (аргументы  как  строка ())
+        Dim  S  как  строка
+
+
+        Console.WriteLine( "Возможность написания" )
+        S  =  Console.ReadLine()
+        Для  i  As  Integer  =  0  To  S.Length  -  1
+            Console.Write(S.Chars(i))
+            Console.WriteLine(Asc(S.Chars(i)))
+            Выберите  случай  S
+                Случай  32
+                    Console.WriteLine( "Первый " )
+                    Console.WriteLine(Asc(S.Chars(i)))
+                Случай  65–98  _  _
+                    Console.Write( "Дополнительная информация" )
+            Конец  выбора
+
+        Следующий
+    Конец  сабвуфера
+Конечный  модуль
