@@ -1,26 +1,26 @@
-Система импорта
-Импортирует  System.Data
-Импортирует  System.Runtime.InteropServices
+Imports System
+Imports System.Data
+Imports System.Runtime.InteropServices
 
 
-Модульная  программа
-    Sub  Main (аргументы  как  строка ())
-        Dim  S  как  строка
+Module Program
+    Sub Main(args As String())
+        Dim S As String
 
 
-        Console.WriteLine( "Возможность написания" )
-        S  =  Console.ReadLine()
-        Для  i  As  Integer  =  0  To  S.Length  -  1
+        Console.WriteLine("Ââåäèòå ñòðîêó")
+        S = Console.ReadLine()
+        For i As Integer = 0 To S.Length - 1
             Console.Write(S.Chars(i))
             Console.WriteLine(Asc(S.Chars(i)))
-            Выберите  случай  S
-                Случай  32
-                    Console.WriteLine( "Первый " )
+            Select Case S
+                Case 32
+                    Console.WriteLine("Ïðîáåëû ")
                     Console.WriteLine(Asc(S.Chars(i)))
-                Случай  65–98  _  _
-                    Console.Write( "Дополнительная информация" )
-            Конец  выбора
+                Case 65 To 98
+                    Console.Write(" Àíãëèéñêèé ÿçûê ")
+            End Select
 
-        Следующий
-    Конец  сабвуфера
-Конечный  модуль
+        Next
+    End Sub
+End Module
